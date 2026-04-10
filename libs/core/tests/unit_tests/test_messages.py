@@ -997,9 +997,7 @@ def test_ai_message_chunk_merges_same_index_tool_call_continuations_in_delta() -
     merged = first + AIMessageChunk(
         content="",
         tool_call_chunks=[
-            create_tool_call_chunk(
-                name=None, args='"query": "bar"}', id=None, index=0
-            )
+            create_tool_call_chunk(name=None, args='"query": "bar"}', id=None, index=0)
         ],
     )
 
